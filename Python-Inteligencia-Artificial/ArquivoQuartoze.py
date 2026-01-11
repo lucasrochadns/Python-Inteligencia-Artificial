@@ -13,7 +13,7 @@ class Account:
         if amount >= 0:
             self.__balance = amount
         else:
-            print(f" Value Error. Cannot be negative ")
+            raise ValueError(f" Value Error. Cannot be negative ")
 
     def deposit(self, amount):
         if amount > 0:
@@ -27,7 +27,9 @@ print(personalAccount.balance)
 
 personalAccount.balance = 2500.0
 
-#Type Inference is indeed a powerful
-personalAccount.balance = -100.0
+try:
+    personalAccount.balance = -100.0
+except ValueError as e:
+    print(e)
 
 print(f"Holder: {personalAccount.holder} Amount: {personalAccount.balance}")
