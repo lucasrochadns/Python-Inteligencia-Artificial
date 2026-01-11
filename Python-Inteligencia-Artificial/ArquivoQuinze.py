@@ -14,5 +14,6 @@ class Triathlete(Swimmer, Cyclist):
         return "Running in the marathon"
 
 
+#Test Inheritance Multiple
 athlete = Triathlete()
 print(f" Triathlete: {athlete.running_marathon()}, Swimmer: {athlete.swim()}, Cyclist: {athlete.cycling()}")
