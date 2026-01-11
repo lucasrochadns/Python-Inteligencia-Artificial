@@ -1,1 +1,2 @@
-from funcoes import soma as teste 
+from ArquivoSete import soma
+print(soma(10, 20))
