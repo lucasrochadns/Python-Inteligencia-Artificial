@@ -9,3 +9,6 @@ print(list(map(mult, listNumber)))
 
 quad = lambda x: x ** 2
 print(list(map(quad, listNumber)))
+
+listName = ["Lucas", "Jullia Maria", "Julia Rosa", "Pedro", "Arthur"]
+print(list(filter(lambda x: x == "Jullia Maria", listName)))
