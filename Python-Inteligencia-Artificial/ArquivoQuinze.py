@@ -17,3 +17,4 @@ class Triathlete(Swimmer, Cyclist):
 #Test Inheritance Multiple
 athlete = Triathlete()
 print(f" Triathlete: {athlete.running_marathon()}, Swimmer: {athlete.swim()}, Cyclist: {athlete.cycling()}")
+
